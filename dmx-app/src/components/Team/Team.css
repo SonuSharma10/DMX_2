@@ -1,0 +1,277 @@
+main{
+    background-color: #e6e6e6;
+}
+/* Team Section */
+.team-section-1 {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e6e6e6;
+}
+
+.team-section-1 h1 {
+    font-size: 48px;
+    color: #333;
+    position: relative;
+}
+
+.team-section-1 h1::after {
+    content: "Our Team";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    color: #2196f3;
+    font-size: 48px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.team-section-1 .subheading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.team-section-1 .description {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #666;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    padding-left: 150px;
+    /* padding-right: 50px; */
+    align-items: center;
+}
+
+.profile-card {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: rotate(-5deg);
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-content {
+    padding: 20px;
+}
+
+.profile-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-content p {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #00d8ff;
+}
+
+.profile-card.hidden {
+    display: none;
+}
+
+.more-button {
+
+    background-color: #00d8ff;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+.more-button.show {
+    display: inline-block;
+}
+
+.team-section-1 {
+    margin-bottom: 40px;
+}
+
+.team-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member.hidden{
+    display: none;
+}
+
+.team-member img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member-name {
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #008CBA;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.more-button-1{
+    background-color: #00d8ff;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+.more-button-1.show{
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+footer {
+    background-color: #223469;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+    margin-right: 30px;
+  }
+  
+  .footer-section .img{
+    bottom: 230px;
+    left: 30px;
+    background-color: white;
+    width: 100px;
+    height: 60px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .contact-us form input,
+  .contact-us form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-us form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #223469;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-us form button:hover {
+    background-color: #ccc;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+  }
+  
